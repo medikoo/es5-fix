@@ -14,7 +14,7 @@ require('es5-fix/date/parse/implement');
 Or you can use fixed version independently e.g.:
 
 ```javascript
-var parse = require('es5-fix/date/parse);
+var parse = require('es5-fix/date/parse');
 ```
 
 
@@ -22,11 +22,11 @@ var parse = require('es5-fix/date/parse);
 
 #### Date.parse _(es5-fix/date/parse)_
 
-There's probably no single implementation that provides perfectly compliant version of `Date.parse`, this version fixes that.
+There's probably no single implementation that provides perfectly compliant version of `Date.parse`, this version fixes that. Implementation is based on [es5-shim](https://github.com/es-shims/es5-shim) implementation.
 
 #### Object.defineProperty _(es5-fix/object/define-property)_
 
-It addresses the issue where re-definition of non writable properly is rejected. Old versions of Webkit are vulnerable to that. See:
+Addresses the issue where re-definition of non writable properly has no effect. Old versions of Webkit are vulnerable to that. See:
 * http://code.google.com/p/chromium/issues/detail?id=72736
 * https://bugs.webkit.org/show_bug.cgi?id=54289
 
