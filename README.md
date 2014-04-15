@@ -22,8 +22,7 @@ var parse = require('es5-fix/date/parse');
 
 #### Date.parse _(es5-fix/date/parse)_
 
-There's probably no single implementation that provides perfectly compliant version of `Date.parse`, this version fixes that. Implementation is based on [es5-shim](https://github.com/es-shims/es5-shim) implementation.
-
+There's probably no single implementation that provides perfectly compliant version of `Date.parse`, this version fixes that. Implementation is based on [es5-shim](https://github.com/es-shims/es5-shim) version.
 #### Object.defineProperty _(es5-fix/object/define-property)_
 
 Addresses the issue where re-definition of non writable properly has no effect. Old versions of Webkit are vulnerable to that. See:
