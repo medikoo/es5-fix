@@ -35,6 +35,26 @@ Additionally it fallbacks to direct assign if `defineProperty` crashes with _def
 
 Makes sure that fix for `defineProperty` also applies to `defineProperties`
 
+### AST converters
+
+#### _(es5-fix/ast/reserved-identifiers-to-literals)_
+
+Replaces or property identifiers that match reserverd keywords into property literals
+
+e.g. AST produed from:
+
+```javascript
+x.delete(x);
+var foo = { class: 'something' };
+```
+
+Will be updated to one which compiles into:
+
+```javascript
+x['delete'](x);
+var foo = { 'class': 'something' };
+```
+
 ### Installation
 #### npm
 
