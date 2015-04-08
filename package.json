@@ -16,11 +16,13 @@
     "url": "git://github.com/medikoo/es5-fix.git"
   },
   "dependencies": {
-    "es3-ext": "0.1.0",
-    "es5-ext": "~0.10.1"
+    "es3-ext": "0.1",
+    "es5-ext": "~0.10.6"
   },
   "devDependencies": {
-    "tad": "~0.1.21"
+    "escodegen": "~1.6.1",
+    "esprima": "~2.1",
+    "tad": "~0.2.2"
   },
   "scripts": {
     "test": "node ./node_modules/tad/bin/tad"

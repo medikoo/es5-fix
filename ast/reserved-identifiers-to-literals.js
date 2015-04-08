@@ -23,7 +23,7 @@ module.exports = function (ast) {
 		value.value = value.name;
 		value.raw = '\'' + value.name + '\'';
 		delete value.name;
-		if (ast.computed === false) ast.computed = true;
+		if ((ast.computed === false) && (ast.type === 'MemberExpression')) ast.computed = true;
 	});
 	return ast;
 };
