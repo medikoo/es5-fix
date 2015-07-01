@@ -1,8 +1,6 @@
 # es5-fix
 ## Fixes for incomplete ECMAScript 5 implementations
 
-Fix issues in early ECMAScript 5 implementations.
-
 ### Usage
 
 Fixed function can be implemented to override native one, for that use `implement` module, e.g.:
